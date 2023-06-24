@@ -136,6 +136,7 @@ class ThinkGearParser(object):
 
 class TimeSeriesRecorder:
     def __init__(self, file_name=None):
+	pd.TimeSeries = pd.Series
         self.meditation = pd.TimeSeries()
         self.attention = pd.TimeSeries()
         self.raw = pd.TimeSeries()
